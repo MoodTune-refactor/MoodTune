@@ -1,0 +1,153 @@
+{
+    "common": {
+        "view-more": "Ver más",
+        "view-less": "Ver menos"
+    },
+    "loading": {
+        "loading": "Cargando...",
+        "almost-here": "Ya casi estamos...",
+        "little-more-time": "Solo un poco más..."
+    },
+    "welcome": {
+        "welcome": "¡Bienvenido a MoodTune!",
+        "preparing": "Estamos preparando tus playlists"
+    },
+    "navbar": {
+        "mood-form": "¡Recomiéndame una playlist!",
+        "playlists": "Mis playlists",
+        "stats": "Mis estadísticas",
+        "moods": "Mis moods",
+        "fav-songs": "Mis canciones favoritas",
+        "fav-artists": "Artistas que sigo",
+        "logout": "Cerrar sesión"
+    },
+    "login": {
+        "slogan": "Tus moods,\n tus playlists.",
+        "login-button": "Inicia sesión con Spotify",
+        "login-policy-prefix": "Al iniciar sesión, aceptas nuestra ",
+        "login-policy-link": "Política de Privacidad"
+    },
+    "mood-form": {
+        "title": "¿Cómo quieres tus Playlists?",
+        "settings": "Tu nivel de importancias",
+        "preferences": "Tus preferencias",
+        "settings-info": "Estos ajustes no indican el valor que tendrá cada uno de estos parámetros a la hora de recomendarte una playlist, sino cómo de importante es que las canciones de la misma sean similares a lo que te gusta en cada uno de los parámetros. Para calcular estos datos analizamos las canciones que te gustan, pero puedes modificarlos antes de solicitar una recomendación.",
+        "preferences-info": "Tus niveles de preferencias se calculan en base a tus gustos musicales; sin embargo si te apetece escuchar algo en concreto, puedes modificar los parámetros tanto como desees. ¡Te animamos a experimentar y descubrir!",
+        "preferences-learn": "Aprende más sobre estos parámetros aquí",
+        "textarea-placeholder": "Cuéntanos cómo te sientes",
+        "get-playlist-mood": "Basadas en mi mood",
+        "get-playlist-preferences": "Basadas en mis preferencias",
+        "or": "o",
+        "mood-form-info": "Con este modelo, podrás obtener una recomendación basada en tu estado de ánimo actual. Analizaremos tus palabras y te daremos varias canciones que harán match con tu mood. Ten en cuenta que de momento no estamos combinando nuestro modelo de recomendaciones basado en preferencias, por lo que es posible que obtengas resultados muy diversos. Puedes probar todas las opciones, experimentar y por supuesto, si te gusta el resultado, guardarlo entre tus playlists. ¡Te animamos descubrir!",
+        "get-playlist": "Dame una playlist",
+        "mood-list": "Crea tu Mood List en Spotify",
+        "mood-list-tile": "El título de tu MoodList",
+        "go-to-spotify": "¡Crear Playlist en Spotify!",
+        "added-songs": "Canciones añadidas",
+        "view-lyrics": "Ver letra",
+        "translate-lyrics-to-spanish": "Traducir al español",
+        "view-original-lyrics": "Ver letra original",
+        "hide-lyrics": "Ocultar letra",
+        "playlist-form-description": "Puedes añadir a tu playlist las canciones que elijas dando like a tantas como desees o, si lo prefieres, puedes añadir todas si no especificas ninguna. También puedes incluirlas directamente en tu lista de favoritos.",
+        "no-playlist": "No se han encontrado Playlists creadas con MoodTune. Por favor crea una en la primera opción.",
+        "loading-playlists": "Cargando Playlists...",
+        "add-to-existing-playlist": "Añadir a Playlists existentes",
+        "add-to-playlist": "Añadir a estas Playlists"
+    },
+    "my-tracks": {
+        "fav-tracks": "Canciones que te gustan",
+        "top-tracks": "Your most listened to songs",
+        "description": "Estas son las canciones que utilizamos para determinar tus preferencias. Como tus gustos pueden variar, las calculamos cada vez que inicias sesión, así podemos ser más precisos con tus preferencias más recientes.",
+        "empty-tracks": "Upps.. It looks like you don't have any favourite songs saved yet."
+    },
+    "genres": {
+        "all genres": "Cualquier género",
+        "rock": "Rock",
+        "pop": "Pop",
+        "indie": "Indie",
+        "metal": "Metal",
+        "hip-hop / rap": "Hip-Hop / Rap",
+        "electronic": "Electrónica",
+        "alternative": "Alternativa",
+        "punk": "Punk",
+        "jazz": "Jazz",
+        "r&b / soul": "R&B / Soul",
+        "latin": "Latino",
+        "reggae": "Reggae",
+        "funk / disco": "Funk / Disco"
+    },
+    "preferences": {
+        "male": "Timbre vocal",
+        "danceable": "Bailabilidad",
+        "tonal": "Tonalidad",
+        "timbre_bright": "Brillo",
+        "instrumental": "Instrumental",
+        "mood_acoustic": "Modo Acústico",
+        "mood_aggressive": "Modo Agresivo",
+        "mood_electronic": "Modo Electrónico",
+        "mood_happy": "Modo Feliz",
+        "mood_party": "Modo Fiesta",
+        "mood_relaxed": "Modo Relajado",
+        "mood_sad": "Modo Triste"
+    },
+    "settings": {
+        "male": "Timbre vocal",
+        "danceable": "Bailabilidad",
+        "tonal": "Tonalidad",
+        "timbre_bright": "Brillo",
+        "instrumental": "Instrumental",
+        "mood_acoustic": "Modo Acústico",
+        "mood_aggressive": "Modo Agresivo",
+        "mood_electronic": "Modo Electrónico",
+        "mood_happy": "Modo Feliz",
+        "mood_party": "Modo Fiesta",
+        "mood_relaxed": "Modo Relajado",
+        "mood_sad": "Modo Triste"
+    },
+    "privacy-policy": {
+        "title": "Política de Privacidad y Cookies de MoodTune",
+        "effective-date": "Fecha de entrada en vigor: ",
+        "introduction-title": "1. Introducción",
+        "introduction": "Bienvenido a MoodTune. Tu privacidad es importante para nosotros y estamos comprometidos a proteger la información personal que compartes con nosotros. Esta política explica cómo recopilamos, usamos, almacenamos y protegemos tus datos cuando usas nuestro servicio.",
+        "data-we-collect-title": "2. Datos que recopilamos",
+        "data-we-collect": "Cuando utilizas MoodTune, recopilamos y almacenamos información sobre tus preferencias musicales para proporcionarte recomendaciones personalizadas. Los datos recopilados incluyen:",
+        "data-items": [
+            "Playlists guardadas en tu cuenta de Spotify.",
+            "Canciones y artistas favoritos.",
+            "Otra información musical accesible a través de Spotify (según los permisos concedidos)."
+        ],
+        "use-of-data-title": "3. Uso de los datos",
+        "use-of-data": "Los datos recopilados se utilizan exclusivamente para mejorar tu experiencia en MoodTune, proporcionando recomendaciones personalizadas de playlists basadas en machine learning. No compartimos, vendemos ni transferimos tu información a terceros.",
+        "storage-and-security-title": "4. Almacenamiento y seguridad",
+        "storage-and-security": "Los datos recopilados se almacenan en:",
+        "storage-items": [
+            "Cookies: Utilizamos cookies para mejorar tu experiencia y mantener tu sesión activa.",
+            "Base de datos: Almacenamos información sobre tus preferencias musicales para mejorar futuras recomendaciones."
+        ],
+        "cookies-title": "5. Uso de cookies",
+        "cookies": "MoodTune utiliza cookies para mejorar la experiencia del usuario. Las cookies que utilizamos incluyen:",
+        "cookies-items": [
+            "Cookies esenciales: Necesarias para el funcionamiento de la aplicación.",
+            "Cookies de personalización: Almacenan información sobre tus preferencias para ofrecerte una mejor experiencia."
+        ],
+        "your-rights-title": "6. Tus derechos",
+        "your-rights": "Tienes derecho a:",
+        "rights-items": [
+            "Acceder a los datos que recopilamos sobre ti.",
+            "Solicitar la eliminación de tus datos almacenados.",
+            "Revocar el acceso de MoodTune a tu cuenta de Spotify en cualquier momento desde la configuración de tu cuenta de Spotify."
+        ],
+        "policy-changes-title": "7. Cambios en la política",
+        "policy-changes": "Podemos actualizar esta política de privacidad y cookies ocasionalmente. Cualquier cambio significativo será notificado a través de la aplicación o por correo electrónico.",
+        "contact-title": "8. Contacto",
+        "contact": "Si tienes preguntas sobre nuestra política de privacidad, puedes escribirnos a support@moodtune.com",
+        "acceptance": "Al usar MoodTune, aceptas los términos de esta política de privacidad y cookies."
+    },
+    "empty-data": {
+        "playlists": "Upps... Parece que todavía no tienes ninguna playlist creada con MoodTune. ¿Por qué no echas un vistazo a nuestro proceso de recomendaciones?"
+
+    },
+    "playlists": {
+        "title": "Tus Playlists creadas con MoodTune"
+    }
+}

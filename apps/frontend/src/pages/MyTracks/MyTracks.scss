@@ -1,0 +1,17 @@
+@use '../../styles/colors' as *;
+@use '../../styles/mixins' as *;
+
+.my-tracks {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .my-tracks__title {
+        font-size: 24px;
+    }
+
+    .my-tracks__description {
+        color: $lightGray;
+    }
+}

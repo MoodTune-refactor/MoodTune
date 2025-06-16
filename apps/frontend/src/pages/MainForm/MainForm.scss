@@ -1,0 +1,54 @@
+@use "../../styles/colors" as *;
+@use "../../styles/mixins" as *;
+
+.main-form {
+    @include container;
+    margin-top: 20px;
+
+    .main-form__title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .main-form__form-title {
+            font-size: 40px;
+        }
+
+        .main-form__toggle {
+            display: flex;
+            background-color: $mediumGray;
+            height: fit-content;
+            border-radius: 50px;
+            transition: all 0.3s ease-in;
+
+            &.selected {
+                color: $pureWhite;
+                background-color: $limePop;
+            }
+
+            button {
+                padding: 8px 12px;
+                height: fit-content;
+                font-size: 16px;
+
+                &:hover {
+                    background-color: $mediumGray;
+                    transform: scale(1);
+                }
+            }
+
+            .btn--primary {
+                &:hover {
+                    background-color: $limePop-hover;
+                }
+            }
+
+            .btn--secondary {
+                transition: all 0.3s ease-in;
+                &:hover {
+                    color: $limePop;
+                }
+            }
+        }
+    }
+}

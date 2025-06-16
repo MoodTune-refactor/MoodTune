@@ -1,0 +1,18 @@
+.recomendation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 0;
+
+    .recomendation-form__form-main {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+
+        .recomendation-form__block-right {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+}

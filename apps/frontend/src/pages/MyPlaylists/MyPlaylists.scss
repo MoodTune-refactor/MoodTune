@@ -1,0 +1,13 @@
+@use '../../styles/colors' as *;
+@use '../../styles/mixins' as *;
+
+.my-playlists {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .my-playlists__title {
+        font-size: 24px;
+    }
+}

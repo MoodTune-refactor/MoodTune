@@ -1,0 +1,98 @@
+@use "../../styles/colors" as *;
+@use "../../styles/mixins" as *;
+
+.favourite-tracks {
+    .favourite-tracks__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .favourite-tracks__item {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid $midLightGray;
+            border-radius: 16px;
+            align-items: center;
+
+            @include tablet {
+                flex-direction: row;
+            }
+
+            .favourite-tracks__image {
+                min-width: 280px;
+                min-height: 280px;
+                border-radius: 16px;
+                overflow: hidden;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .favourite-tracks__info {
+                flex-grow: 1;
+                padding: 0 40px;
+
+                .favourite-tracks__name {
+                    font-size: 20px;
+                }
+
+                .favourite-tracks__data,
+                .favourite-tracks__details {
+                    color: $lightGray;
+                    display: flex;
+                    gap: 10px;
+                }
+
+                .favourite-tracks__details--time,
+                .favourite-tracks__details--popularity {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
+
+                .favourite-tracks__stats {
+                    margin-top: 14px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0px 20px;
+
+                    .favourite-tracks__stat {
+                        width: calc(50% - 10px);
+                        display: flex;
+                        gap: 8px;
+                        align-items: center;
+
+                        .favourite-tracks__stat--data {
+                            font-size: 14px;
+                            color: $lightGray;
+                        }
+
+                        progress {
+                            flex-grow: 1;
+                            background-color: $mediumGray;
+                            border-radius: 16px;
+                            overflow: hidden;
+                            height: 6px;
+
+                            &::-webkit-progress-bar {
+                                background-color: $mediumGray;
+                            }
+                            
+                            &::-webkit-progress-value {
+                                background: $irisGradient;
+                                border-radius: 5px;
+                            }
+                            
+                              // Para Firefox
+                              &::-moz-progress-bar {
+                                background: $irisGradient;
+                                border-radius: 5px;
+                              }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

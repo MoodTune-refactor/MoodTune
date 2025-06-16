@@ -1,0 +1,40 @@
+@use '../../styles/colors' as *;
+@use '../../styles/mixins' as *;
+
+.login {
+    @include container;
+    padding: 120px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 60px;
+    position: relative;
+    background-color: $backgroundCardColor;
+
+    .login__text {
+        font-size: 50px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .login__policy {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .login__policy--text {
+        font-size: 16px;
+        font-weight: regular;
+    }
+
+    .login__policy--link {
+        cursor: pointer;
+
+        &:hover { color: $pinkBlush; }
+    }
+}
+  

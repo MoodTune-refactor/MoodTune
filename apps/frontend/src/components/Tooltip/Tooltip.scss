@@ -1,0 +1,37 @@
+@use "../../styles/colors" as *;
+
+.tooltip {
+    position: relative;
+
+    .tooltip__btn { 
+        cursor: pointer;
+        max-height: 22px;
+     }
+
+    .tooltip__content {
+        position: absolute;
+        width: 400px;
+        background-color: $pureWhite;
+        box-shadow: $floatingBoxShadow;
+        color: $midLightGray;
+        padding: 20px;
+        border-radius: 12px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-align: left;
+        z-index: 800;
+
+        .tooltip__link {
+            color: $pinkBlush;
+            font-weight: bold;
+            transition: color 0.3s ease-in;
+            cursor: pointer;
+
+            &:hover {
+                color: $pinkBlush-hover;
+            }
+        }
+    }
+}

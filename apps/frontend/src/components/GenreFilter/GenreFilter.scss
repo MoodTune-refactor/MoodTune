@@ -1,0 +1,41 @@
+@use "../../styles/colors" as *;
+
+.genre-filters {
+    display: flex;
+    flex-wrap: wrap;
+  
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  
+    &__genre {
+      padding: 8px 12px;
+      border-radius: 20px;
+      background-color: $mediumGray;
+      color: $pureWhite;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      
+      &:hover {
+        background-color: $midLightGray;
+      }
+  
+      &.selected {
+        background-color: $limePop;
+        color: $pureBlack;
+        font-weight: bold;
+
+        &:hover {
+          background-color: $limePop-hover;
+        }
+      }
+    }
+  
+    .hidden {
+      display: none;
+    }
+  }
+  
