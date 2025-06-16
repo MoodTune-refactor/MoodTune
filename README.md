@@ -1,6 +1,9 @@
-# 🎧 MoodTune Monorepo
+# 🎧 MoodTune
 
 MoodTune is a web application that recommends Spotify songs and playlists based on the user's mood, tastes, and preferences. This project is built as a **monorepo using Turborepo**, with a frontend app in React + Vite and a backend app in Flask + Python.
+
+> ⚠️ **Notice!**  
+> Although MoodTune is a functional app where you can get your personalized playlists, it's still being refactored and improved for its future production release. This is why you may not experience a smooth user experience, including long loading times or uncontrolled stuttering. We're working on fixing this! You'll soon be able to use a much more efficient version of MoodTune.
 
 ---
 
@@ -11,10 +14,9 @@ MoodTune/
 ├── apps/
 │   ├── frontend/    # React + Vite + TS + SASS
 │   └── backend/     # Flask + Python
-├── packages/        # (optional) Shared libraries
 ├── .gitignore
 ├── turbo.json
-├── package.json     # Shared dev scripts
+└── package.json     # Shared dev scripts
 ```
 
 ---
@@ -34,94 +36,82 @@ Make sure you have installed:
 
 ### 🔧 Installation
 
-1. Clone the repository:
+**1. Clone the repository:**
+  ```bash
+  git clone https://github.com/yourusername/moodtune.git
+  ```
 
-```bash
-git clone https://github.com/yourusername/moodtune.git
-cd moodtune
-```
-
-2. Install the monorepo dependencies:
-
-```bash
-pnpm install
-```
-
-3. Create virtual environments and `.env` files separately inside each app (see below 👇).
+**2. Install the monorepo dependencies:**
+  ```bash
+  pnpm install
+  ```
 
 ---
 
-## 🧩 Applications
+#### Mount local Backend
+**1. Go to backend directory**
+  ```bash
+  cd apps/backend
+  ```
 
-### 🎨 Frontend (`apps/frontend`)
+**2. Set Up the Virtual Environment**
+  Create and activate a virtual environment:
+  
+  Windows
+  ```bash
+  python -m venv venv
+  venv\Scripts\activate
+  ```
 
-Frontend built with React + Vite + TypeScript + SASS.
+  macOS/Linux
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate
+  ```
 
-#### Useful scripts:
+**3. Install Dependencies**
+  Install the required Python libraries:
+  ```bash
+  pip install -r requirements.txt
+  ```
 
-```bash
-# Dev (frontend only)
-pnpm dev:frontend
+**4. Configure Environment Variables**
+  Create a .env file in the `apps/backend` directory and add the corresponding keys. After that, execute the following command.
+  ```
+  set FLASK_APP=run.py
+  ```
 
-# Build
-pnpm build --filter=frontend
-```
+**5. Add the models files**
+  Download the files that you can find [here](https://drive.google.com/drive/folders/1i-Mq9OqLtSa0eTa0wxmNM41MtwTsX2eK?usp=sharing) and add it to `apps/backend/src/models`
 
-#### `.env` example (`apps/frontend/.env.example`):
+**6. Run the Application**
+  Start the Flask development server:
+  ```bash
+  python run.py
+  ```
 
-```env
-VITE_API_URL=http://localhost:5000
-VITE_SPOTIFY_CLIENT_ID=your_public_client_id
-```
-
----
-
-### 🔥 Backend (`apps/backend`)
-
-Backend API built with Python and Flask.
-
-#### Setup:
-
-```bash
-cd apps/backend
-python -m venv venv
-source venv/bin/activate         # or venv\Scripts\activate on Windows
-pip install -r requirements.txt
-cp .env.example .env
-python run.py
-```
-
-#### `.env` example (`apps/backend/.env.example`):
-
-```env
-FLASK_ENV=development
-SECRET_KEY=your_secret_key
-DATABASE_URL=postgresql://user:pass@host/db
-SPOTIFY_CLIENT_SECRET=your_private_key
-```
+The server will be available at [http://127.0.0.1:5000.](http://localhost:5000/)
 
 ---
 
-## 🔄 Unified Development
+#### Mount local Frontend
+**1. Go to frontend directory**
+  ```bash
+  cd apps/frontend
+  ```
 
-To run **frontend and backend in parallel**:
+**2. Install depencencies**
+  ```bash
+  pnpm install
+  ```
 
-```bash
-pnpm dev
-```
+**5. Run the Application**
+  Start the Flask development server:
+  ```bash
+  pnpm dev
+  ```
 
-This uses Turborepo to execute both `dev` scripts in parallel. You can customize this in `turbo.json`.
-
----
-
-## 👩‍💻 Useful Commands
-
-```bash
-pnpm dev             # Run frontend and backend together
-pnpm dev:frontend    # Run only frontend
-pnpm dev:backend     # Run only backend (if defined)
-pnpm build           # Build all apps
-```
+The frontend will be available at [http://127.0.0.1:5173.](http://localhost:5173/)
 
 ---
 
