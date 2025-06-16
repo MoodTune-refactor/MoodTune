@@ -1,0 +1,67 @@
+# ---------------------------------
+# Python bytecode y cachés
+# ---------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ---------------------------------
+# Entorno virtual
+# ---------------------------------
+venv/
+env/
+ENV/
+.venv/
+
+# ---------------------------------
+# Entornos / configuración sensible
+# ---------------------------------
+.env
+.env.*
+
+# ---------------------------------
+# Jupyter Notebooks (si no los usas)
+# ---------------------------------
+*.ipynb
+
+# ---------------------------------
+# Logs y dumps
+# ---------------------------------
+*.log
+*.out
+*.bak
+*.tmp
+*.swp
+*.swo
+*.old
+
+# ---------------------------------
+# Bases de datos temporales
+# ---------------------------------
+*.sqlite3
+*.db
+
+# ---------------------------------
+# Docker / config
+# ---------------------------------
+__docker_build__/
+*.pid
+
+# ---------------------------------
+# IDEs y sistemas operativos
+# ---------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---------------------------------
+# Flask session (si la subes como carpeta)
+# ---------------------------------
+flask_session/
+
+# ---------------------------------
+# Archivos comunes de despliegue (por seguridad)
+# ---------------------------------
+gunicorn.conf.py
